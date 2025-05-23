@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .hover-box {
+      position: relative;
+      display: inline-block;
+    }
+
+    .hover-box img {
+      width: 300px;
+      height: auto;
+    }
+
+    .hover-box span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hover-box:hover span {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hover-box">
+  <img src="sua-imagem.jpg" alt="Imagem">
+  <span>Texto ao passar o mouse</span>
+
+</div>
+<section class="produto-container">
+    <section class="produto" data-product-id="cafe-arabica">
+        <div class="hover-box">
+            <span>Saiba mais</span>
+            <div class="produto-imagens">
+                <a href="detalhes-folha.html">
+                    <img class="imagem-principal" src="assets/img/cafe-arabica1.jpg" alt="Café Arábica">
+                    <img class="imagem-secundaria" src="assets/img/cafe-arabica2.jpg" alt="Café Arábica - Detalhe">
+                </a>
+            </div>
+        </div>
+        <div class="produto-info">
+            <h3 data-product-name="Café Arábica">Café Arábica</h3>
+            <p class="preco" data-product-price="99.90">R$ 99,90</p>
+            <button class="botao-carrinho">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section class="produto" data-product-id="tangerina">
+        <div class="produto-imagens">
+            <img class="imagem-principal" src="assets/img/tangerina1.jpg" alt="Tangerina">
+            <img class="imagem-secundaria" src="assets/img/tangerina2.jpg" alt="Tangerina - Detalhe">
+        </div>
+        <div class="produto-info">
+            <h3 data-product-name="Tangerina">Tangerina</h3>
+            <p class="preco" data-product-price="99.90">R$ 99,90</p>
+            <button class="botao-carrinho">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section class="produto" data-product-id="tulipa-campo">
+        <div class="produto-imagens">
+            <img class="imagem-principal" src="assets/img/tulipa -campo1.jpg" alt="Tulipa Campo">
+            <img class="imagem-secundaria" src="assets/img/tulipa-campo2.jpg" alt="Tulipa Campo - Detalhe">
+        </div>
+        <div class="produto-info">
+            <h3 data-product-name="Tulipa Campo">Tulipa Campo</h3>
+            <p class="preco" data-product-price="99.90">R$ 99,90</p>
+            <button class="botao-carrinho">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+
+    <section class="produto" data-product-id="costela-de-adao">
+        <div class="produto-imagens">
+            <img class="imagem-principal" src="assets/img/costela-de-adao1.jpg" alt="Costela de Adão">
+            <img class="imagem-secundaria" src="assets/img/costela-de-adao2.jpg" alt="Costela de Adão - Detalhe">
+        </div>
+        <div class="produto-info">
+            <h3 data-product-name="Costela de Adão">Costela de Adão</h3>
+            <p class="preco" data-product-price="99.90">R$ 99,90</p>
+            <button class="botao-carrinho">Adicionar ao Carrinho</button>
+        </div>
+    </section>
+</section>
+</body>
+</html>

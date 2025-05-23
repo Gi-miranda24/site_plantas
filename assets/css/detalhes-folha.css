@@ -1,0 +1,322 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilos para telas */
+@media screen {
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: rgba(179, 215, 174, 0.762); /* Aplica a cor geral do fundo */
+    }
+}
+
+/* Reset de Estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de Cores */
+:root{
+    --cor-padrao:#8bae88;
+    --cor-padrao-hover:#dbedd6;
+    --cor-fonte:#000000;
+    --cor-fonte-o:#555;
+    --cor-btn:#f5efef;
+    --cor-btn-hover:#144efc;
+    --cor-btn-fonte:#000000;
+    --cor-fonte-corpo:#555;
+    --cor-fonte-corpo-leve:#090909;
+    --background-color: rgba(179, 215, 174, 0.762);
+}
+
+/* Layout Principal */
+
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 20px auto; /* Centraliza o container e adiciona margem superior/inferior */
+    padding: 0 20px; /* Espaçamento lateral */
+    display: flex; /* Para alinhar galeria e info lado a lado */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    gap: 30px; /* Espaço entre as colunas */
+}
+
+/* --- Cabeçalho do Site --- */
+/* Se você já tem estilos para .site-header e .main-nav em home.css, pode pular esta parte ou copiar/colar aqui */
+.site-header {
+    background-color: #278839; /* Verde escuro */
+    padding: 15px 0;
+    color: white;
+    text-align: center;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #c8e6c9;
+}
+
+/* --- Seções da Página de Detalhes --- */
+.product-detail-page {
+    padding: 40px 0;
+}
+
+/* Galeria de Imagens */
+.product-gallery {
+    flex: 1; /* Ocupa o espaço restante */
+    min-width: 300px; /* Largura mínima para evitar que encolha demais */
+    max-width: 500px; /* Largura máxima para a galeria */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    border: 2px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail-images img:hover,
+.thumbnail-images img.active {
+    border-color: #278839; /* Borda verde ao passar o mouse ou ativo */
+}
+
+/* Informações do Produto */
+.product-info {
+    flex: 2; /* Ocupa o dobro do espaço da galeria */
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.product-title {
+    font-size: 2.5em;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.product-sku {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.price-section {
+    margin-bottom: 25px;
+}
+
+.current-price {
+    font-size: 2.2em;
+    color: #278839; /* Verde vibrante */
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.old-price {
+    font-size: 1.4em;
+    color: #999;
+    text-decoration: line-through; /* Linha sobre o preço antigo */
+}
+
+.descricao-produto h2 {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.descricao-produto p {
+    margin-bottom: 15px;
+}
+
+/* Opções do Produto */
+.product-options h2 {
+    font-size: 1.5em;
+    color: #1a1a1a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.option-group {
+    margin-bottom: 15px;
+}
+
+.option-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.option-group select,
+.option-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Garante que padding não adicione à largura total */
+}
+
+/* Botão Adicionar ao Carrinho */
+.add-to-cart-button, .buy-now-button { /* Adicionado .buy-now-button */
+    background-color: #278839; /* Azul vibrante */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%; /* Ocupa a largura total */
+    margin-top: 30px;
+}
+
+.add-to-cart-button:hover, .buy-now-button:hover {
+  background-color: #57b14a;
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+/* --- Rodapé do Site --- */
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Em telas pequenas, empilha as seções */
+        align-items: center; /* Centraliza as seções empilhadas */
+        gap: 20px;
+    }
+
+    .product-gallery,
+    .product-info {
+        max-width: 100%; /* Ocupa a largura total disponível */
+    }
+
+    .product-title {
+        font-size: 2em;
+    }
+
+    .current-price {
+        font-size: 1.8em;
+    }
+
+    .add-to-cart-button, .buy-now-button {
+        font-size: 1em;
+        padding: 12px 20px;
+    }
+}
+
+/* Rodapé */
+footer {
+  background-color: #a6b9a3;
+  color: #191818;
+  padding: 20px 0;
+  text-align: center; /* Centraliza o conteúdo do rodapé */
+}
+
+.footer-content {
+  max-width: 1200px; /* Ajuste a largura máxima conforme necessário */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px; /* Adiciona um pouco de espaço nas laterais */
+}
+
+.social-media a {
+  color: #0f0e0e;
+  font-size: 1.5em; /* Tamanho dos ícones */
+  margin-left: 15px;
+  text-decoration: none; /* Remove o sublinhado dos links */
+  transition: color 0.3s ease; /* Adiciona uma transição suave na cor */
+}
+
+
+
+/* Estilos para a parte de texto (copyright) */
+.footer-content p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.social-media img {
+  width: 30px; /* Ajuste o tamanho conforme necessário */
+  height: 30px;
+  margin-left: 15px;
+  vertical-align: middle; /* Alinha verticalmente com o texto, se houver */
+  transition: opacity 0.3s ease; /* Exemplo de efeito hover (opacidade) */
+}
+
+.social-media a:hover img {
+  opacity: 0.7; /* Diminui a opacidade ao passar o mouse */
+  color: #f9f9f9;
+}
+
+/* Media Queries (Seções específicas para responsividade) */
+/* Você pode adicionar suas media queries aqui, por exemplo: */
+/*
+@media (max-width: 768px) {
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+    .navebar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        text-align: left;
+        margin-top: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+*/

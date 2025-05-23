@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Loja Vitual - Giflor.com.br</title>
+      <link rel="stylesheet" href="assets/css/home.css">
+      <link rel="stylesheet" href="assets/css/detalhes-folha.css"> <link rel="stylesheet" href="assets/css/detalhes-produto.css"> </head>
+
+      </head>
+
+<body>
+<main>
+
+      <section class="navebar"> <!-- MENU NAVEGAÇÃO TOPO Gi.flor-->
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="Giflor" width="123px">
+        </div>
+
+       
+       <nav>
+        <!--
+        <div class="search-container">
+          
+  <button class="search-button">
+    <img src="assets/img/search.svg" alt="Pesquisar" width="20" height="20">
+  </button>
+
+  <input type="text" class="search-input" placeholder="O que você procura?">
+</div>
+-->
+  <ul>
+    <li id="MenuItens"><a href="home.html" title="">Inicio</a></li>
+    <li class="dropdown">
+      <a href="" title="">Produtos</a>
+      <ul class="dropdown-menu">
+        <li><a href="folhagens.html" title="">Folhagens</a></li>
+        <li><a href="frutiferas.html" title="">Frutíferas</a></li>
+        <li><a href="flores.html" title="">Flores</a></li>
+        <li><a href="horta.html" title="">Horta</a></li>
+        <li><a href="todos-os-produtos.html" title="">Todos os produtos</a></li>
+      </ul>
+    </li>
+    <li><a href="" title="">Empresa</a></li>
+    <li><a href="" title="">Contatos</a></li>
+    <li><a href="" title="">Minha Conta</a></li>
+    <img src="assets/img/bag-outline.svg" alt="" width="30px" height="30px">
+  </ul>
+</nav>
+      
+      </section>
+
+    <main class="product-detail-page">
+        <div class="container">
+            <section class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/img/cafe-arabica1.jpg" alt="Café Arábica Orgânico - Vista Principal">
+                </div>
+                <div class="thumbnail-images">
+                    <img src="assets/img/cafe-arabica1.jpg" alt="Café Arábica - Miniatura 1" class="thumbnail active">
+                    <img src="assets/img/cafe-arabica2.jpg" alt="Café Arábica - Miniatura 2" class="thumbnail">
+                    <img src="assets/img/costela-de-adao1.jpg" alt="Café Arábica - Miniatura 3" class="thumbnail">
+                </div>
+            </section>
+
+            <section class="product-info">
+                <h1 class="product-title">Café Arábica Orgânico Fresco</h1>
+                <p class="product-sku">SKU: CAO2025</p>
+
+                <div class="price-section">
+                    <span class="current-price">R$ 99,90</span>
+                    <span class="old-price">R$ 119,90</span> </div>
+
+                <div class="descricao-produto">
+    <h2>Detalhes do Produto: Café Arábica</h2>
+    <p>Conheça o nosso **Café Arábica Orgânico**, uma verdadeira joia para o seu lar e para o seu paladar! Cultivado com carinho e práticas sustentáveis, este café não só produz grãos de sabor excepcional, como também se apresenta como uma **planta de casa deslumbrante e perfumada**, ideal para adicionar um toque verde e acolhedor ao seu ambiente.</p>
+    
+    <p>Imagine ter a beleza de suas folhas verdes e brilhantes adornando sua sala, com a promessa de flores delicadas e o aroma inconfundível do café fresco. Uma experiência sensorial completa, do cultivo à xícara!</p>
+
+    <h3>Características Principais:</h3>
+    <ul>
+        <li><strong>Sabor Premium:</strong> Grãos selecionados que entregam um café rico, encorpado, com notas suaves de chocolate e caramelo, e um aroma floral e frutado.</li>
+        <li><strong>Cultivo Orgânico:</strong> Direto de Minas Gerais, Brasil, nossa planta é cultivada sem agrotóxicos, garantindo pureza e sustentabilidade.</li>
+        <li><strong>Planta de Casa Versátil:</strong> Ideal para ambientes internos com boa luminosidade indireta, ela traz vida e um toque exótico à sua decoração.</li>
+        <li><strong>Para Quem Ama Café:</strong> Além da beleza, oferece a oportunidade de acompanhar o ciclo do café, da flor ao fruto, culminando em uma bebida artesanal e cheia de história.</li>
+        <li><strong>Tipo de Grãos:</strong> Disponível em grãos inteiros, para você moer na hora e desfrutar do frescor máximo, ou nas moagens fina, média ou grossa, conforme sua preferência de preparo.</li>
+    </ul>
+</div>
+
+                <div class="product-options">
+                    <h2>Opções de Compra</h2>
+                    <div class="option-group">
+                        <label for="peso">Peso:</label>
+                        <select id="peso" name="peso">
+                            <option value="250g">250g</option>
+                            <option value="500g">500g (+R$ 40,00)</option>
+                            <option value="1kg">1kg (+R$ 80,00)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="moagem">Moagem:</label>
+                        <select id="moagem" name="moagem">
+                            <option value="graos">Grãos Inteiros</option>
+                            <option value="fina">Fina (Cafeteira Espresso)</option>
+                            <option value="media">Média (Cafeteira Coador)</option>
+                            <option value="grossa">Grossa (Prensa Francesa)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label for="quantidade">Quantidade:</label>
+                        <input type="number" id="quantidade" name="quantidade" value="1" min="1" max="10">
+                    </div>
+                </div>
+
+                <button class="add-to-cart-button">Adicionar ao Carrinho</button>
+                <button class="buy-now-button">Comprar Agora</button> </section>
+        </div>
+    </main>
+
+    <footer><!-- RODAPE Gi.flor -->
+  <div class="footer-content">
+    <div class="social-media">
+  <a href="https://www.facebook.com/?locale=pt_BR" target="_blank" aria-label="Facebook"><img src="assets/img/incos-rede-social/icons8-facebook.svg" alt="Facebook"></a>
+  <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank" aria-label="Instagram"><img src="assets/img/incos-rede-social/icons8-instagram.svg" alt="Instagram"></a>
+  <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4tZ2IifQ%3D%3D%22%7D" target="_blank" aria-label="Twitter"><img src="assets/img/incos-rede-social/icons8-twitter.svg" alt="Twitter"></a>
+    <p>&copy; 2025 Todos os direitos reservados</p>
+    
+  </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
